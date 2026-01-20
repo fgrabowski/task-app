@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import type { Task } from './types.tsx';
+import type { Task } from '../types.tsx';
 
-function App() {
+export function AddTask() {
 
   const [tasks, setTasks] = useState<Task[]>([]);
 
@@ -46,4 +46,4 @@ function App() {
   )
 }
 
-export default App
+export default AddTask;
