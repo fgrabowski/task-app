@@ -4,7 +4,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 
 import Board from '../src/routes/board.tsx'
-import AddTask from '../src/routes/addTask.tsx'
 
 const router = createBrowserRouter([
   {
@@ -15,10 +14,10 @@ const router = createBrowserRouter([
         index: true,
         element: <Board />,
       },
-      {
-        path: "/add-task",
-        element: <AddTask />,
-      }
+      // {
+      //   path: "/add-task",
+      //   element: <AddTask />,
+      // }
     ],
   },
 ]);
