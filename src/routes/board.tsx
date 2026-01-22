@@ -8,10 +8,10 @@ const MOCK_TASKS: Task[] = [
   { id: '1', title: 'Nauczyć się Reacta', description: 'Podstawy komponentów', priority: 'high', status: 'todo' },
   { id: '2', title: 'Zrobić kawę', description: 'Kluczowe dla projektu', priority: 'medium', status: 'in-progress' },
   { id: '3', title: 'Zainstalować backend', description: 'Bez tego ani rusz, będzie w TypeScript', priority: 'low', status: 'done' },
-  { id: '4', title: 'Zrobić imprezę', description: 'Z okazji otwarcia aplikacji', priority: 'high', status: 'in-progress' }
+  { id: '4', title: 'Zrobić imprezę', description: 'Z okazji otwarcia parasola w twojej dupie', priority: 'high', status: 'in-progress' }
 ];
 
-export function Board() {
+export default function Board() {
   const [tasks, setTasks] = useState<Task[]>(MOCK_TASKS);
 
   const todoTasks = tasks.filter(t => t.status === 'todo');
@@ -55,5 +55,3 @@ export function Board() {
     </div>
   );
 }
-
-export default Board;
